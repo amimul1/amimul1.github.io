@@ -14,12 +14,15 @@ const navLinks = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const location = useLocation();
 
   useEffect(() => {
     const saved = localStorage.getItem("theme");
-    if (saved === "dark" || (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+    if (saved === "light") {
+      setIsDark(false);
+      document.documentElement.classList.remove("dark");
+    } else {
       setIsDark(true);
       document.documentElement.classList.add("dark");
     }
@@ -46,7 +49,6 @@ const Navbar = () => {
         <Link to="/" className="font-display text-lg font-bold text-foreground hover:text-primary transition-colors focus-ring rounded-md px-1">
           AZ
         </Link>
-
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-1">
           {navLinks.map((link) => (
@@ -78,7 +80,6 @@ const Navbar = () => {
             {isDark ? <Sun size={16} /> : <Moon size={16} />}
           </button>
         </div>
-
         {/* Mobile */}
         <div className="flex md:hidden items-center gap-2">
           <button
@@ -97,7 +98,6 @@ const Navbar = () => {
           </button>
         </div>
       </nav>
-
       <AnimatePresence>
         {isOpen && (
           <motion.div
