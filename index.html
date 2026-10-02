@@ -1,26 +1,365 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amimul Ehsan Zoha</title>
+  <meta name="description" content="Amimul Ehsan Zoha, PhD student in Information Technology at George Mason University. Applied NLP for healthcare, education, and language.">
+  <meta name="author" content="Amimul Ehsan Zoha">
+  <meta property="og:title" content="Amimul Ehsan Zoha">
+  <meta property="og:description" content="PhD student at George Mason University working on applied NLP for healthcare, education, and language.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amimul1.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+<div class="shell">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+  <!-- ============ Sidebar ============ -->
+  <aside class="side">
+    <div class="side-inner">
+      <a href="#top" class="mark" aria-label="Back to top">
+        <span>a</span><span>z</span>
+      </a>
+      <h1 class="name">Amimul Ehsan Zoha</h1>
+      <p class="role">PhD student, Information Technology<br>George Mason University</p>
+      <p class="place"><span class="dot" aria-hidden="true"></span>Fairfax, Virginia</p>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+      <nav class="toc" aria-label="Sections">
+        <a href="#about">about</a>
+        <a href="#news">news</a>
+        <a href="#research">research</a>
+        <a href="#papers">papers</a>
+        <a href="#path">path so far</a>
+        <a href="#teaching">teaching</a>
+        <a href="#projects">things I built</a>
+        <a href="#contact">say hello</a>
+      </nav>
+
+      <ul class="links">
+        <li><a href="mailto:azoha@gmu.edu">azoha@gmu.edu</a></li>
+        <li><a href="https://github.com/amimul1" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/amimul1" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="assets/Amimul_Zoha_CV.pdf" target="_blank" rel="noopener">CV (pdf)</a></li>
+      </ul>
+
+      <button class="theme" type="button" aria-label="Switch light or dark theme">
+        <span class="theme-light">lights off</span><span class="theme-dark">lights on</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ============ Main ============ -->
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- Hero -->
+    <section class="hero">
+      <p class="kicker">hi, I'm Zoha</p>
+      <h2 class="hero-line">I build language tools that read the messy stuff:
+        <em>clinical notes</em>, <em>student code</em>, and the places where a model says it understood but didn't.</h2>
+
+      <figure class="note" aria-label="An example clinical sentence with symptoms and negations highlighted">
+        <figcaption class="note-head">
+          <span>ehr_sentence_0412.txt</span>
+          <button class="replay" type="button" aria-label="Replay annotation">replay</button>
+        </figcaption>
+        <p class="note-body" id="note">
+          Pt reports <span class="ann" data-label="symptom">fatigue</span> and a
+          <span class="ann" data-label="symptom">dry cough</span> for 3 wks after a dust storm,
+          <span class="ann neg" data-label="negated">denies fever</span>,
+          <span class="ann neg" data-label="negated">no night sweats</span>.
+        </p>
+        <p class="note-foot">
+          This is roughly what my research looks like up close. Spotting the symptom is the easy half.
+          Noticing the <q>no</q> in front of it is where models trip.
+        </p>
+      </figure>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="block">
+      <h3 class="label"><span>01</span> about</h3>
+      <div class="prose">
+        <p>
+          I'm a first-year PhD student in Information Technology at
+          <strong>George Mason University</strong>, advised by
+          <strong>Dr. Marcos Zampieri</strong>. I work on applied natural language processing, mostly
+          in places where getting it wrong actually costs someone something: healthcare, education,
+          and language itself.
+        </p>
+        <p>
+          Before Mason I spent five years at the <strong>University of Arizona</strong>, where I finished
+          a BS and an MS in Computer Science (GPA 3.90). In my last year and a half there I worked in
+          the Deep Target NLP Lab with <strong>Dr. Gondy Leroy</strong>, building a pipeline that pulls
+          Valley Fever symptoms out of patient records without ever sending those records to an outside API.
+          That work became my first paper, which I presented at IEEE ICHI 2026 in Minneapolis.
+        </p>
+        <p>
+          The other half of my time in Tucson was spent teaching. Six semesters as a TA for intro
+          Python and Java, a summer bootcamp on LLMs for people who had never written code, and a student AI
+          club I co-founded that grew past a hundred members. A lot of my
+          research questions come from watching people learn.
+        </p>
+      </div>
+
+      <aside class="now">
+        <p class="now-tag">now</p>
+        <p>First semester at Mason. Evaluating how well open-weight LLMs handle intro programming
+          coursework, queuing jobs on the Hopper cluster, and getting used to weather that isn't 105&deg;F.</p>
+      </aside>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="block">
+      <h3 class="label"><span>02</span> news</h3>
+      <ol class="news">
+        <li><time>Fall 2026</time><p>Started my PhD at <strong>George Mason University</strong> with Dr. Marcos Zampieri. Moved from the Sonoran Desert to Northern Virginia.</p></li>
+        <li><time>2026</time><p>Presented <em>Fine-Tuning BERT with Privacy-Preserving LLM-Labeled Synthetic Training Data</em> at <strong>IEEE ICHI 2026</strong> in Minneapolis. My first paper and my first conference talk.</p></li>
+        <li><time>May 2026</time><p>Graduated from the University of Arizona with a BS and MS in Computer Science.</p></li>
+        <li><time>Jan 2025</time><p>Joined the <strong>Deep Target NLP Lab</strong> as a graduate research assistant. Also started a side project on LLM logical reasoning with Dr. Liangming Pan.</p></li>
+        <li><time>Aug 2024</time><p>Co-founded the <strong>UA AI Club</strong>. It grew to 100+ members, running hands-on workshops on fine-tuning, RAG, and running models locally.</p></li>
+        <li><time>Summer 2024</time><p>Designed and taught a 4-week LLM bootcamp for 40+ interns at AI Core, most of whom had no CS background.</p></li>
+        <li><time>Summer 2023</time><p>Shipped a CO&#8322; emissions banner to the Android app at <strong>American Express GBT</strong> in Chicago.</p></li>
+      </ol>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="block">
+      <h3 class="label"><span>03</span> research</h3>
+      <p class="lede">Three threads, one habit: build the test set first, then find out what the model really does.</p>
+
+      <div class="threads">
+        <article class="thread">
+          <p class="thread-n">i.</p>
+          <h4>Clinical NLP that stays inside the hospital</h4>
+          <p>Valley Fever is common in Arizona and easy to miss, because its symptoms look like a cold or
+            pneumonia. I built a pipeline that finds its symptoms and social determinants of health in EHR
+            text. Instead of sending patient notes to a commercial LLM, we used an LLM to label
+            <em>synthetic</em> sentences, then fine-tuned a small BERT model on those labels. I also put together a
+            1,200-sentence challenge set full of implicit symptoms, heavy jargon, and stacked negations,
+            and compared clinical encoders (BioClinical ModernBERT) against small quantized local LLMs
+            (MedGemma, Llama) that a hospital could realistically run.</p>
+          <p class="thread-meta">with Dr. Gondy Leroy &middot; University of Arizona</p>
+        </article>
+
+        <article class="thread">
+          <p class="thread-n">ii.</p>
+          <h4>Does the model reason, or does it pattern-match?</h4>
+          <p>Using the FLDx2 formal logic corpus, I designed controlled experiments around three questions.
+            If a model can do a 3-step proof, can it do a 6-step one? Does it still work when you add facts that
+            don't matter? And what happens when you slip a negation in? (Negation, again. See thread i.)</p>
+          <p class="thread-meta">with Dr. Liangming Pan &middot; University of Arizona</p>
+        </article>
+
+        <article class="thread">
+          <p class="thread-n">iii.</p>
+          <h4>LLMs and the intro CS classroom</h4>
+          <p>Students in CS1 are already using LLMs, so the question is less <q>should they</q> and more
+            <q>how good are these models at the actual coursework?</q> I'm building an executable
+            evaluation for intro programming tasks so open-weight models get graded the way a student would:
+            by running their code against tests.</p>
+          <p class="thread-meta">ongoing &middot; George Mason University</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Papers -->
+    <section id="papers" class="block">
+      <h3 class="label"><span>04</span> papers</h3>
+      <article class="paper">
+        <div class="paper-venue"><span>IEEE ICHI</span><span>2026</span></div>
+        <div>
+          <h4>Fine-Tuning BERT with Privacy-Preserving LLM-Labeled Synthetic Training Data: An Application to Valley Fever Symptom Extraction</h4>
+          <p class="paper-sub">IEEE International Conference on Healthcare Informatics, Minneapolis, MN. Presented in person.</p>
+          <p class="paper-tldr"><b>tl;dr</b> You can get a strong clinical symptom extractor without exposing a single real patient note
+            to a commercial model: let the LLM label synthetic data, then train a small model that runs on hospital hardware.</p>
+        </div>
+      </article>
+      <p class="aside-note">More on the way. Ask me about the benchmark work if you're curious.</p>
+    </section>
+
+    <!-- Path -->
+    <section id="path" class="block">
+      <h3 class="label"><span>05</span> path so far</h3>
+
+      <ol class="path">
+        <li class="stop now-stop">
+          <div class="when">2026 &rarr;</div>
+          <div class="what">
+            <h4>PhD Student, Information Technology</h4>
+            <p class="where">George Mason University &middot; Fairfax, VA</p>
+            <p>Advised by Dr. Marcos Zampieri. Applied NLP for linguistics, healthcare, and education.</p>
+          </div>
+        </li>
+        <li class="stop">
+          <div class="when">2025 to 2026</div>
+          <div class="what">
+            <h4>Graduate Research Assistant, Deep Target NLP Lab</h4>
+            <p class="where">University of Arizona, MIS Department &middot; Tucson, AZ</p>
+            <p>Privacy-preserving clinical NLP for Valley Fever. Built the challenge set, coordinated expert medical
+              annotation, and ran the encoder vs. local LLM comparison. Led to the ICHI 2026 paper.</p>
+          </div>
+        </li>
+        <li class="stop">
+          <div class="when">2024 to 2026</div>
+          <div class="what">
+            <h4>Co-Founder &amp; Vice President, UA AI Club</h4>
+            <p class="where">University of Arizona</p>
+            <p>Grew it from zero to 100+ members. Brought in faculty speakers, ran workshops on LoRA, RAG, and local inference,
+              and represented the club at the UArizona Hackathon.</p>
+          </div>
+        </li>
+        <li class="stop">
+          <div class="when">2024</div>
+          <div class="what">
+            <h4>Student AI Engineer &amp; Teaching Specialist</h4>
+            <p class="where">AI Core, ICDI &middot; Tucson, AZ</p>
+            <p>Built RAG and agent-based chatbots for clients with LangChain, kept an eye on API costs, and managed interns.
+              Also wrote and taught a 4-week CustomGPTs and Web API bootcamp from scratch.</p>
+          </div>
+        </li>
+        <li class="stop">
+          <div class="when">2023</div>
+          <div class="what">
+            <h4>Software Development Intern</h4>
+            <p class="where">American Express Global Business Travel (Egencia) &middot; Chicago, IL</p>
+            <p>Added a sustainability banner with per-trip CO&#8322; data to Android rail search, wired up the backend endpoint that
+              serves it to both Android and iOS, and built a reusable Jetpack Compose callout card for the design system.</p>
+          </div>
+        </li>
+        <li class="stop">
+          <div class="when">2021 to 2024</div>
+          <div class="what">
+            <h4>Teaching Assistant, six semesters</h4>
+            <p class="where">University of Arizona, Computer Science</p>
+            <p>CSC 110, 120, and 210. More below.</p>
+          </div>
+        </li>
+        <li class="stop start-stop">
+          <div class="when">2021</div>
+          <div class="what">
+            <h4>Started a CS degree in Tucson</h4>
+            <p class="where">University of Arizona</p>
+            <p>BS + MS in Computer Science, finished May 2026 with a 3.90.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Teaching -->
+    <section id="teaching" class="block">
+      <h3 class="label"><span>06</span> teaching &amp; mentoring</h3>
+      <div class="prose">
+        <p>Office hours taught me a lot about how people actually learn to code: usually by staring at an
+          off-by-one error until it finally clicks. I try to give hints, not answers.</p>
+      </div>
+
+      <div class="tally">
+        <div><b>6</b><span>semesters as a TA</span></div>
+        <div><b>50+</b><span>TA candidates interviewed</span></div>
+        <div><b>40+</b><span>bootcamp interns taught</span></div>
+        <div><b>100+</b><span>AI club members</span></div>
+      </div>
+
+      <ul class="courses">
+        <li><span class="code">CSC 110</span> Introduction to Computer Programming (Python)</li>
+        <li><span class="code">CSC 120</span> Computer Programming I (Python)</li>
+        <li><span class="code">CSC 210</span> Software Development (Java)</li>
+        <li><span class="code">bootcamp</span> CustomGPTs &amp; Web APIs, a 4-week course for non-CS interns at AI Core</li>
+        <li><span class="code">workshops</span> LoRA fine-tuning, RAG pipelines, local LLM inference, UA AI Club</li>
+      </ul>
+      <p class="aside-note">As a TA I led sections of 20+ students, wrote test cases and graded code, sat on the hiring
+        panel for new CS TAs, and did a lot of informal career advice about internships and research.</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="block">
+      <h3 class="label"><span>07</span> things I built</h3>
+      <p class="lede">Mostly coursework that got out of hand. Numbers where there are numbers.</p>
+
+      <div class="projects">
+        <article class="proj">
+          <h4>Jeopardy QA engine</h4>
+          <p>Lucene retriever over 100K Wikipedia pages with a custom analyzer, then GPT-4o-mini reranking the top 20.</p>
+          <div class="metric" style="--from:.29;--to:.53"><span class="metric-k">P@1</span><span class="bar"><i></i></span><span class="metric-v">0.29 &rarr; 0.53</span></div>
+          <p class="stack">Java &middot; Lucene &middot; BM25 &middot; LLM reranking</p>
+        </article>
+        <article class="proj">
+          <h4>Multi-label emotion classifier</h4>
+          <p>A CNN that tags text with any of 7 emotions at once. Threshold tuning, dropout, early stopping.</p>
+          <div class="metric" style="--from:0;--to:.83"><span class="metric-k">micro-F1</span><span class="bar"><i></i></span><span class="metric-v">0.83</span></div>
+          <p class="stack">Python &middot; Keras</p>
+        </article>
+        <article class="proj">
+          <h4>Arc-standard dependency parser</h4>
+          <p>Transition-based parser with an SVM oracle trained on ~30K configurations from the UD treebank.</p>
+          <div class="metric" style="--from:0;--to:.619"><span class="metric-k">UAS</span><span class="bar"><i></i></span><span class="metric-v">61.9%</span></div>
+          <p class="stack">Python &middot; scikit-learn</p>
+        </article>
+        <article class="proj">
+          <h4>Heart disease prediction</h4>
+          <p>KNN, RBF-kernel KNN, and logistic regression on the Cleveland dataset, with hand-rolled grid search and k-fold CV.</p>
+          <p class="stack">Python &middot; scikit-learn</p>
+        </article>
+        <article class="proj">
+          <h4>An operating system kernel</h4>
+          <p>Process control, inter-process communication, and device drivers, written from scratch in C on the USLOSS emulator.</p>
+          <p class="stack">C &middot; Docker</p>
+        </article>
+        <article class="proj">
+          <h4>Log-structured file system</h4>
+          <p>A FUSE file system on Linux that writes everything as a log, segment cleaning included.</p>
+          <p class="stack">C &middot; Linux</p>
+        </article>
+        <article class="proj">
+          <h4>FitGuide</h4>
+          <p>Android fitness app built by a two-person Scrum team: login, workout tracking, guided routines, meal plans.</p>
+          <p class="stack">Java &middot; Android &middot; Firebase</p>
+        </article>
+        <article class="proj">
+          <h4>Socialite</h4>
+          <p>A small social network: Express server, vanilla JS client using fetch, MongoDB underneath.</p>
+          <p class="stack">Node &middot; Express &middot; MongoDB</p>
+        </article>
+        <article class="proj">
+          <h4>DIY Resume Master</h4>
+          <p>Tailors a LaTeX resume to a job posting using a local model through Ollama or GPT-4o, with Selenium doing the scraping.</p>
+          <p class="stack">Python &middot; Ollama &middot; LaTeX</p>
+        </article>
+      </div>
+
+      <details class="toolbox">
+        <summary>toolbox</summary>
+        <p><b>Languages</b> Python, Java, C, Kotlin, JavaScript, SQL, HTML/CSS</p>
+        <p><b>ML &amp; NLP</b> PyTorch, Hugging Face Transformers, PEFT/LoRA, Unsloth, LLaMA-Factory, quantization, spaCy, MedSpaCy, NLTK, scikit-learn, Lucene, LangChain, Weights &amp; Biases</p>
+        <p><b>Everything else</b> Slurm/HPC, Docker, Linux, Git, AWS, Android Studio, Jetpack Compose, Express, MongoDB, React, Figma</p>
+      </details>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="block contact">
+      <h3 class="label"><span>08</span> say hello</h3>
+      <p class="big">The best way to reach me is <a href="mailto:azoha@gmu.edu">azoha@gmu.edu</a>.</p>
+      <p class="prose-sm">I'm happy to talk about clinical NLP, LLM evaluation, teaching intro CS, or the PhD application process.
+        If you're an undergrad wondering whether research is for you, please do write.</p>
+    </section>
+
+    <footer class="foot">
+      <p>Last updated October 2026. Plain HTML and CSS, no frameworks.</p>
+    </footer>
+  </main>
+</div>
+
+<script src="assets/main.js"></script>
+</body>
 </html>
