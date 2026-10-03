@@ -27,11 +27,13 @@
   <!-- ============ Sidebar ============ -->
   <aside class="side">
     <div class="side-inner">
-      <a href="#top" class="mark" aria-label="Back to top">
-        <span>a</span><span>z</span>
+      <a href="#top" class="portrait" aria-label="Back to top">
+        <img src="assets/headshot.jpg" alt="Amimul Ehsan Zoha" width="640" height="799">
+        <span class="mark" aria-hidden="true"><span>a</span><span>z</span></span>
       </a>
       <h1 class="name">Amimul Ehsan Zoha</h1>
       <p class="role">PhD student, Information Technology<br>George Mason University</p>
+      <p class="advisor"><span>advisor</span><a href="https://mzampieri.com/" target="_blank" rel="noopener">Dr. Marcos Zampieri</a></p>
       <p class="place"><span class="dot" aria-hidden="true"></span>Fairfax, Virginia</p>
 
       <nav class="toc" aria-label="Sections">
@@ -39,6 +41,7 @@
         <a href="#news">news</a>
         <a href="#research">research</a>
         <a href="#papers">papers</a>
+        <a href="#talks">talks &amp; service</a>
         <a href="#path">path so far</a>
         <a href="#teaching">teaching</a>
         <a href="#projects">things I built</a>
@@ -93,7 +96,7 @@
         <p>
           I'm a first-year PhD student in Information Technology at
           <strong>George Mason University</strong>, advised by
-          <strong>Dr. Marcos Zampieri</strong>. I work on applied natural language processing, mostly
+          <strong><a href="https://mzampieri.com/" target="_blank" rel="noopener">Dr. Marcos Zampieri</a></strong>. I work on applied natural language processing, mostly
           in places where getting it wrong actually costs someone something: healthcare, education,
           and language itself.
         </p>
@@ -102,7 +105,8 @@
           a BS and an MS in Computer Science (GPA 3.90). In my last year and a half there I worked in
           the Deep Target NLP Lab with <strong>Dr. Gondy Leroy</strong>, building a pipeline that pulls
           Valley Fever symptoms out of patient records without ever sending those records to an outside API.
-          That work became my first paper, which I presented at IEEE ICHI 2026 in Minneapolis.
+          That work became my first paper as first author, which I presented at
+          <a href="https://www.computer.org/csdl/proceedings-article/ichi/2026/642600a001/2iTi1JK2KfS" target="_blank" rel="noopener">IEEE ICHI 2026</a> in Minneapolis.
         </p>
         <p>
           The other half of my time in Tucson was spent teaching. Six semesters as a TA for intro
@@ -124,7 +128,7 @@
       <h3 class="label"><span>02</span> news</h3>
       <ol class="news">
         <li><time>Fall 2026</time><p>Started my PhD at <strong>George Mason University</strong> with Dr. Marcos Zampieri. Moved from the Sonoran Desert to Northern Virginia.</p></li>
-        <li><time>2026</time><p>Presented <em>Fine-Tuning BERT with Privacy-Preserving LLM-Labeled Synthetic Training Data</em> at <strong>IEEE ICHI 2026</strong> in Minneapolis. My first paper and my first conference talk.</p></li>
+        <li><time>2026</time><p>Presented <a href="https://www.computer.org/csdl/proceedings-article/ichi/2026/642600a001/2iTi1JK2KfS" target="_blank" rel="noopener"><em>Fine-Tuning BERT with Privacy-Preserving LLM-Labeled Synthetic Training Data</em></a> at <strong>IEEE ICHI 2026</strong> in Minneapolis. My first paper as first author.</p></li>
         <li><time>May 2026</time><p>Graduated from the University of Arizona with a BS and MS in Computer Science.</p></li>
         <li><time>Jan 2025</time><p>Joined the <strong>Deep Target NLP Lab</strong> as a graduate research assistant. Also started a side project on LLM logical reasoning with Dr. Liangming Pan.</p></li>
         <li><time>Aug 2024</time><p>Co-founded the <strong>UA AI Club</strong>. It grew to 100+ members, running hands-on workshops on fine-tuning, RAG, and running models locally.</p></li>
@@ -165,10 +169,12 @@
           <p class="thread-n">iii.</p>
           <h4>LLMs and the intro CS classroom</h4>
           <p>Students in CS1 are already using LLMs, so the question is less <q>should they</q> and more
-            <q>how good are these models at the actual coursework?</q> I'm building an executable
-            evaluation for intro programming tasks so open-weight models get graded the way a student would:
-            by running their code against tests.</p>
-          <p class="thread-meta">ongoing &middot; George Mason University</p>
+            <q>how good are these models at the actual coursework?</q> My first PhD project builds on
+            <em>CSEPrompts</em> (Raihan et al., <em>Journal of Intelligent Information Systems</em>), a benchmark of
+            intro CS prompts. I'm making it executable, so models get graded the way a student would, by running
+            their code against tests, and stretching it across more human languages and more programming languages.
+            A student in Dhaka or S&atilde;o Paulo asks the same questions as one in Fairfax, just not in English.</p>
+          <p class="thread-meta">ongoing &middot; with Dr. Marcos Zampieri and Nishat Raihan &middot; George Mason University</p>
         </article>
       </div>
     </section>
@@ -179,18 +185,44 @@
       <article class="paper">
         <div class="paper-venue"><span>IEEE ICHI</span><span>2026</span></div>
         <div>
-          <h4>Fine-Tuning BERT with Privacy-Preserving LLM-Labeled Synthetic Training Data: An Application to Valley Fever Symptom Extraction</h4>
-          <p class="paper-sub">IEEE International Conference on Healthcare Informatics, Minneapolis, MN. Presented in person.</p>
+          <h4><a href="https://www.computer.org/csdl/proceedings-article/ichi/2026/642600a001/2iTi1JK2KfS" target="_blank" rel="noopener">Fine-Tuning BERT with Privacy-Preserving LLM-Labeled Synthetic Training Data: An Application to Valley Fever Symptom Extraction</a></h4>
+          <p class="paper-authors"><strong>Amimul Ehsan Zoha</strong>, Gondy Leroy, John N. Galgiani, Fariba Donovan</p>
+          <p class="paper-sub">IEEE International Conference on Healthcare Informatics (ICHI), Minneapolis, MN, 2026. pp. 1&#8209;10. Presented in person.</p>
           <p class="paper-tldr"><b>tl;dr</b> You can get a strong clinical symptom extractor without exposing a single real patient note
             to a commercial model: let the LLM label synthetic data, then train a small model that runs on hospital hardware.</p>
+          <p class="paper-links"><a href="https://www.computer.org/csdl/proceedings-article/ichi/2026/642600a001/2iTi1JK2KfS" target="_blank" rel="noopener">paper</a></p>
         </div>
       </article>
       <p class="aside-note">More on the way. Ask me about the benchmark work if you're curious.</p>
     </section>
 
+    <!-- Talks & service -->
+    <section id="talks" class="block">
+      <h3 class="label"><span>05</span> talks &amp; service</h3>
+      <div class="two">
+        <div>
+          <h4 class="mini">talks &amp; posters</h4>
+          <ul class="plain">
+            <li><b>IEEE ICHI 2026</b>, Minneapolis, MN. Conference talk on privacy-preserving synthetic data for clinical NLP.</li>
+            <li><b>ABRC Flinn Research Conference</b>, Arizona. Valley Fever symptom extraction.</li>
+            <li><b>University of Arizona</b>. Several poster presentations on my NLP research.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="mini">organizing &amp; community</h4>
+          <ul class="plain">
+            <li><b>UA AI Club</b>, co-founder and VP. Faculty talks and hands-on workshops for 100+ members.</li>
+            <li><b>UArizona Hackathon</b>. Represented the club and ran hands-on technical workshops.</li>
+            <li><b>AI Core bootcamp</b>. Designed a 4-week LLM course for 40+ interns.</li>
+            <li><b>CS TA hiring panel</b>. Interviewed 50+ TA candidates for the department.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- Path -->
     <section id="path" class="block">
-      <h3 class="label"><span>05</span> path so far</h3>
+      <h3 class="label"><span>06</span> path so far</h3>
 
       <ol class="path">
         <li class="stop now-stop">
@@ -198,7 +230,7 @@
           <div class="what">
             <h4>PhD Student, Information Technology</h4>
             <p class="where">George Mason University &middot; Fairfax, VA</p>
-            <p>Advised by Dr. Marcos Zampieri. Applied NLP for linguistics, healthcare, and education.</p>
+            <p>Advised by <a href="https://mzampieri.com/" target="_blank" rel="noopener">Dr. Marcos Zampieri</a>. Applied NLP for linguistics, healthcare, and education.</p>
           </div>
         </li>
         <li class="stop">
@@ -258,7 +290,7 @@
 
     <!-- Teaching -->
     <section id="teaching" class="block">
-      <h3 class="label"><span>06</span> teaching &amp; mentoring</h3>
+      <h3 class="label"><span>07</span> teaching &amp; mentoring</h3>
       <div class="prose">
         <p>Office hours taught me a lot about how people actually learn to code: usually by staring at an
           off-by-one error until it finally clicks. I try to give hints, not answers.</p>
@@ -284,7 +316,7 @@
 
     <!-- Projects -->
     <section id="projects" class="block">
-      <h3 class="label"><span>07</span> things I built</h3>
+      <h3 class="label"><span>08</span> things I built</h3>
       <p class="lede">Mostly coursework that got out of hand. Numbers where there are numbers.</p>
 
       <div class="projects">
@@ -348,7 +380,7 @@
 
     <!-- Contact -->
     <section id="contact" class="block contact">
-      <h3 class="label"><span>08</span> say hello</h3>
+      <h3 class="label"><span>09</span> say hello</h3>
       <p class="big">The best way to reach me is <a href="mailto:azoha@gmu.edu">azoha@gmu.edu</a>.</p>
       <p class="prose-sm">I'm happy to talk about clinical NLP, LLM evaluation, teaching intro CS, or the PhD application process.
         If you're an undergrad wondering whether research is for you, please do write.</p>
