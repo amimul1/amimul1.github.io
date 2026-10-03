@@ -28,6 +28,21 @@
   annotate();
   document.querySelector(".replay").addEventListener("click", annotate);
 
+  // Photo lightbox for the snapshot wall.
+  var box = document.querySelector(".lightbox");
+  if (box && box.showModal) {
+    var boxImg = box.querySelector("img"), boxCap = box.querySelector(".lb-cap");
+    document.querySelectorAll(".snap button").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var img = b.querySelector("img"), cap = b.parentNode.querySelector("figcaption");
+        boxImg.src = img.src; boxImg.alt = img.alt;
+        boxCap.textContent = cap ? cap.textContent.replace(/\s+/g, " ").trim() : "";
+        box.showModal();
+      });
+    });
+    box.addEventListener("click", function (e) { if (e.target === box) box.close(); });
+  }
+
   // Reveal sections and fill metric bars as they scroll in.
   var blocks = document.querySelectorAll(".block");
   var metrics = document.querySelectorAll(".metric");

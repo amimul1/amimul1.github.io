@@ -40,10 +40,11 @@
         <a href="#about">about</a>
         <a href="#news">news</a>
         <a href="#research">research</a>
-        <a href="#papers">papers</a>
-        <a href="#talks">talks &amp; service</a>
+        <a href="#papers">papers &amp; talks</a>
+        <a href="#talks">service</a>
         <a href="#path">path so far</a>
         <a href="#teaching">teaching</a>
+        <a href="#snapshots">snapshots</a>
         <a href="#projects">things I built</a>
         <a href="#contact">say hello</a>
       </nav>
@@ -114,6 +115,10 @@
           club I co-founded that grew past a hundred members. A lot of my
           research questions come from watching people learn.
         </p>
+        <figure class="wide-photo">
+          <img src="assets/photos/grad-catalinas.jpg" alt="Amimul in a graduation stole, sitting on a rock in the mountains above Tucson at sunset" loading="lazy" width="1400" height="788">
+          <figcaption>Grad photos in the mountains above Tucson, spring 2026. Five years of desert, wrapped up.</figcaption>
+        </figure>
       </div>
 
       <aside class="now">
@@ -128,11 +133,14 @@
       <h3 class="label"><span>02</span> news</h3>
       <ol class="news">
         <li><time>Fall 2026</time><p>Started my PhD at <strong>George Mason University</strong> with Dr. Marcos Zampieri. Moved from the Sonoran Desert to Northern Virginia.</p></li>
-        <li><time>2026</time><p>Presented <a href="https://www.computer.org/csdl/proceedings-article/ichi/2026/642600a001/2iTi1JK2KfS" target="_blank" rel="noopener"><em>Fine-Tuning BERT with Privacy-Preserving LLM-Labeled Synthetic Training Data</em></a> at <strong>IEEE ICHI 2026</strong> in Minneapolis. My first paper as first author.</p></li>
+        <li><time>Jun 2, 2026</time><p>Presented <a href="https://www.computer.org/csdl/proceedings-article/ichi/2026/642600a001/2iTi1JK2KfS" target="_blank" rel="noopener"><em>Fine-Tuning BERT with Privacy-Preserving LLM-Labeled Synthetic Training Data</em></a> at <strong>IEEE ICHI 2026</strong> in Minneapolis. My first paper as first author.</p></li>
         <li><time>May 2026</time><p>Graduated from the University of Arizona with a BS and MS in Computer Science.</p></li>
+        <li><time>May 5, 2026</time><p>Spoke in the awardee presentations at the <strong>11th ABRC-Flinn Research Conference</strong> in Phoenix, on synthetic data for Valley Fever symptom and SDoH extraction. (<a href="assets/abrc-flinn-2026-agenda.pdf" target="_blank" rel="noopener">agenda</a>)</p></li>
+        <li><time>Feb 25, 2026</time><p>Poster at the <strong>AI Health Innovation Symposium</strong>, University of Arizona.</p></li>
         <li><time>Jan 2025</time><p>Joined the <strong>Deep Target NLP Lab</strong> as a graduate research assistant. Also started a side project on LLM logical reasoning with Dr. Liangming Pan.</p></li>
+        <li><time>2024</time><p>Led hands-on workshops on Custom GPTs and agentic architectures at the <strong>Horizon Conference</strong> at Arizona Western College in Yuma, with nearly 200 students, educators, and business leaders attending.</p></li>
         <li><time>Aug 2024</time><p>Co-founded the <strong>UA AI Club</strong>. It grew to 100+ members, running hands-on workshops on fine-tuning, RAG, and running models locally.</p></li>
-        <li><time>Summer 2024</time><p>Designed and taught a 4-week LLM bootcamp for 40+ interns at AI Core, most of whom had no CS background.</p></li>
+        <li><time>Summer 2024</time><p>Designed and taught a 4-week LLM bootcamp for 40+ interns at <strong>AI Core</strong>, including a Custom GPTs training I co-led with David Herring. Briefed the whole cohort before the August showcase.</p></li>
         <li><time>Summer 2023</time><p>Shipped a CO&#8322; emissions banner to the Android app at <strong>American Express GBT</strong> in Chicago.</p></li>
       </ol>
     </section>
@@ -181,43 +189,67 @@
 
     <!-- Papers -->
     <section id="papers" class="block">
-      <h3 class="label"><span>04</span> papers</h3>
+      <h3 class="label"><span>04</span> papers &amp; talks</h3>
+
+      <h4 class="mini">peer-reviewed</h4>
       <article class="paper">
         <div class="paper-venue"><span>IEEE ICHI</span><span>2026</span></div>
         <div>
           <h4><a href="https://www.computer.org/csdl/proceedings-article/ichi/2026/642600a001/2iTi1JK2KfS" target="_blank" rel="noopener">Fine-Tuning BERT with Privacy-Preserving LLM-Labeled Synthetic Training Data: An Application to Valley Fever Symptom Extraction</a></h4>
           <p class="paper-authors"><strong>Amimul Ehsan Zoha</strong>, Gondy Leroy, John N. Galgiani, Fariba Donovan</p>
-          <p class="paper-sub">IEEE International Conference on Healthcare Informatics (ICHI), Minneapolis, MN, 2026. pp. 1&#8209;10. Presented in person.</p>
-          <p class="paper-tldr"><b>tl;dr</b> You can get a strong clinical symptom extractor without exposing a single real patient note
-            to a commercial model: let the LLM label synthetic data, then train a small model that runs on hospital hardware.</p>
-          <p class="paper-links"><a href="https://www.computer.org/csdl/proceedings-article/ichi/2026/642600a001/2iTi1JK2KfS" target="_blank" rel="noopener">paper</a></p>
+          <p class="paper-sub">IEEE International Conference on Healthcare Informatics (ICHI), Minneapolis, MN, June 2026. pp. 1&#8209;10. Analytics Track, Scientific Session 1.</p>
+          <p class="paper-tldr"><b>tl;dr</b> Generate training data from the annotation guidelines instead of from patient notes.
+            The small model trained on it lands within 2% of an 8B LLM, runs about 350&times; faster, and never touches PHI.</p>
+          <p class="paper-links">
+            <a href="https://www.computer.org/csdl/proceedings-article/ichi/2026/642600a001/2iTi1JK2KfS" target="_blank" rel="noopener">paper</a>
+            <a href="https://doi.org/10.1109/ICHI69079.2026.00012" target="_blank" rel="noopener">doi</a>
+          </p>
+        </div>
+      </article>
+      <figure class="inline-photo">
+        <img src="assets/photos/ichi-2026.jpg" alt="Amimul and Dr. Gondy Leroy standing in front of the title slide at IEEE ICHI 2026" loading="lazy" width="1200" height="900">
+        <figcaption>Right after the talk in Minneapolis, with Dr. Gondy Leroy. June 2, 2026.</figcaption>
+      </figure>
+
+      <h4 class="mini">talks &amp; posters</h4>
+      <article class="paper">
+        <div class="paper-venue talk"><span>ABRC-Flinn</span><span>2026</span></div>
+        <div>
+          <h4>Overcoming Annotation and Privacy Bottlenecks: Synthetic Data Augmentation for Valley Fever Symptom and SDoH Extraction</h4>
+          <p class="paper-sub">Speaker, Awardee Presentations. 11th ABRC-Flinn Research Conference, University of Arizona College of Medicine, Phoenix. May 5, 2026.</p>
+          <p class="paper-authors">Abstract: <em>Improving the Prediction and Recognition of Arizona Valley Fever.</em>
+            <strong>A. Zoha</strong>, M. Potla, G. Leroy, F. Donovan, S.S. Kandala, F. Wei, X. Jin, T. Bils, J.N. Galgiani.</p>
+          <p class="paper-links"><a href="assets/abrc-flinn-2026-agenda.pdf" target="_blank" rel="noopener">agenda</a></p>
+        </div>
+      </article>
+      <article class="paper">
+        <div class="paper-venue talk"><span>poster</span><span>2026</span></div>
+        <div>
+          <h4>Overcoming Annotation and Privacy Bottlenecks: LLM-Labeled Synthetic Data for Augmenting Valley Fever Symptom Extraction</h4>
+          <p class="paper-authors"><strong>A. E. Zoha</strong>, G. Leroy, J. N. Galgiani, F. Donovan</p>
+          <p class="paper-sub">AI Health Innovation Symposium, University of Arizona. February 25, 2026.</p>
+        </div>
+      </article>
+      <article class="paper">
+        <div class="paper-venue talk"><span>workshop</span><span>2024</span></div>
+        <div>
+          <h4>Custom GPTs and Agentic Architectures</h4>
+          <p class="paper-sub">Hands-on workshops with the AI Core team. Horizon Conference, Arizona Western College, Yuma, AZ.</p>
         </div>
       </article>
       <p class="aside-note">More on the way. Ask me about the benchmark work if you're curious.</p>
     </section>
 
-    <!-- Talks & service -->
+    <!-- Service -->
     <section id="talks" class="block">
-      <h3 class="label"><span>05</span> talks &amp; service</h3>
-      <div class="two">
-        <div>
-          <h4 class="mini">talks &amp; posters</h4>
-          <ul class="plain">
-            <li><b>IEEE ICHI 2026</b>, Minneapolis, MN. Conference talk on privacy-preserving synthetic data for clinical NLP.</li>
-            <li><b>ABRC Flinn Research Conference</b>, Arizona. Valley Fever symptom extraction.</li>
-            <li><b>University of Arizona</b>. Several poster presentations on my NLP research.</li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="mini">organizing &amp; community</h4>
-          <ul class="plain">
-            <li><b>UA AI Club</b>, co-founder and VP. Faculty talks and hands-on workshops for 100+ members.</li>
-            <li><b>UArizona Hackathon</b>. Represented the club and ran hands-on technical workshops.</li>
-            <li><b>AI Core bootcamp</b>. Designed a 4-week LLM course for 40+ interns.</li>
-            <li><b>CS TA hiring panel</b>. Interviewed 50+ TA candidates for the department.</li>
-          </ul>
-        </div>
-      </div>
+      <h3 class="label"><span>05</span> service &amp; community</h3>
+      <ul class="plain service">
+        <li><b>UA AI Club</b>, co-founder and vice president. Faculty talks and hands-on workshops (prompting, LoRA, RAG, local inference with Ollama) for 100+ members.</li>
+        <li><b>UArizona Hackathon</b>. Represented the club and ran hands-on technical workshops.</li>
+        <li><b>AI Core</b>. Wrote and taught a 4-week LLM bootcamp for 40+ interns; co-led the Custom GPTs training.</li>
+        <li><b>Horizon Conference 2024</b>, Yuma. Workshop leader for Custom GPTs and agentic architectures.</li>
+        <li><b>CS TA hiring panel</b>, University of Arizona. Interviewed 50+ TA candidates.</li>
+      </ul>
     </section>
 
     <!-- Path -->
@@ -257,7 +289,8 @@
             <h4>Student AI Engineer &amp; Teaching Specialist</h4>
             <p class="where">AI Core, ICDI &middot; Tucson, AZ</p>
             <p>Built RAG and agent-based chatbots for clients with LangChain, kept an eye on API costs, and managed interns.
-              Also wrote and taught a 4-week CustomGPTs and Web API bootcamp from scratch.</p>
+              Also wrote and taught a 4-week CustomGPTs and Web API bootcamp from scratch, and took the
+              workshops on the road to the Horizon Conference in Yuma.</p>
           </div>
         </li>
         <li class="stop">
@@ -314,9 +347,41 @@
         panel for new CS TAs, and did a lot of informal career advice about internships and research.</p>
     </section>
 
+    <!-- Snapshots -->
+    <section id="snapshots" class="block">
+      <h3 class="label"><span>08</span> snapshots</h3>
+      <p class="lede">Proof that I occasionally leave the terminal. Tap a photo to see it bigger.</p>
+      <div class="wall">
+        <figure class="snap tilt-l"><button type="button" aria-label="View larger: Amimul and Dr. Gondy Leroy at IEEE ICHI 2026"><img src="assets/photos/ichi-2026.jpg" alt="Amimul and Dr. Gondy Leroy at IEEE ICHI 2026" loading="lazy" width="1200" height="900"></button>
+          <figcaption><time>Jun 2026</time> IEEE ICHI, Minneapolis. First paper, first conference talk.</figcaption></figure>
+        <figure class="snap tilt-r"><button type="button" aria-label="View larger: Amimul teaching in front of a large screen at AI Core"><img src="assets/photos/aicore-customgpt-training.jpg" alt="Amimul teaching in front of a large screen at AI Core" loading="lazy" width="727" height="1200"></button>
+          <figcaption><time>Summer 2024</time> Teaching the Custom GPTs training at AI Core.</figcaption></figure>
+        <figure class="snap "><button type="button" aria-label="View larger: Group photo of AI Core staff and summer interns"><img src="assets/photos/aicore-allhands-group.jpg" alt="Group photo of AI Core staff and summer interns" loading="lazy" width="1200" height="835"></button>
+          <figcaption><time>Aug 2024</time> AI Core's last all-hands of the summer, a few days before the showcase.</figcaption></figure>
+        <figure class="snap tilt-l"><button type="button" aria-label="View larger: Amimul at a podium briefing interns about the showcase event"><img src="assets/photos/aicore-allhands-talk.jpg" alt="Amimul at a podium briefing interns about the showcase event" loading="lazy" width="1200" height="830"></button>
+          <figcaption><time>Aug 2024</time> Briefing the intern cohort on showcase day logistics.</figcaption></figure>
+        <figure class="snap tilt-r"><button type="button" aria-label="View larger: Amimul helping a student at a laptop"><img src="assets/photos/aicore-helping-intern.jpg" alt="Amimul helping a student at a laptop" loading="lazy" width="1200" height="908"></button>
+          <figcaption><time>2024</time> The part of teaching I like most: debugging over someone's shoulder.</figcaption></figure>
+        <figure class="snap "><button type="button" aria-label="View larger: Welcome to the UA AI Club slide on a TV"><img src="assets/photos/aiclub-welcome.jpg" alt="Welcome to the UA AI Club slide on a TV" loading="lazy" width="1200" height="900"></button>
+          <figcaption><time>Mar 2025</time> UA AI Club, another Saturday session.</figcaption></figure>
+        <figure class="snap tilt-l"><button type="button" aria-label="View larger: Amimul presenting a prompt engineering slide that reads give the model time to think"><img src="assets/photos/aiclub-prompting-workshop.jpg" alt="Amimul presenting a prompt engineering slide that reads give the model time to think" loading="lazy" width="1200" height="900"></button>
+          <figcaption><time>2025</time> Prompting workshop. Principle: give the model time to think. Same goes for students.</figcaption></figure>
+        <figure class="snap tilt-r"><button type="button" aria-label="View larger: Amimul helping students during an Introduction to Ollama workshop"><img src="assets/photos/ollama-workshop.jpg" alt="Amimul helping students during an Introduction to Ollama workshop" loading="lazy" width="900" height="1200"></button>
+          <figcaption><time>2025</time> Running LLMs on your own laptop with Ollama.</figcaption></figure>
+        <figure class="snap "><button type="button" aria-label="View larger: Amimul walking between tables during a workshop"><img src="assets/photos/workshop-floor.jpg" alt="Amimul walking between tables during a workshop" loading="lazy" width="1200" height="900"></button>
+          <figcaption><time>2025</time> Walking the room during a hands-on workshop.</figcaption></figure>
+        <figure class="snap tilt-l"><button type="button" aria-label="View larger: A room of students posing after a workshop"><img src="assets/photos/workshop-crowd.jpg" alt="A room of students posing after a workshop" loading="lazy" width="1200" height="900"></button>
+          <figcaption><time>2025</time> The crowd after a workshop.</figcaption></figure>
+        <figure class="snap tilt-r"><button type="button" aria-label="View larger: Amimul with five others in front of an AI event backdrop with balloons"><img src="assets/photos/ai-event-group.jpg" alt="Amimul with five others in front of an AI event backdrop with balloons" loading="lazy" width="900" height="1200"></button>
+          <figcaption><time>UArizona</time> With teammates and mentors at a campus AI event.</figcaption></figure>
+        <figure class="snap "><button type="button" aria-label="View larger: Amimul sitting at a desk in the American Express GBT office in Chicago"><img src="assets/photos/amex-gbt-desk.jpg" alt="Amimul sitting at a desk in the American Express GBT office in Chicago" loading="lazy" width="900" height="1200"></button>
+          <figcaption><time>Summer 2023</time> My desk at Amex GBT in Chicago, next to the Android mascot.</figcaption></figure>
+      </div>
+    </section>
+
     <!-- Projects -->
     <section id="projects" class="block">
-      <h3 class="label"><span>08</span> things I built</h3>
+      <h3 class="label"><span>09</span> things I built</h3>
       <p class="lede">Mostly coursework that got out of hand. Numbers where there are numbers.</p>
 
       <div class="projects">
@@ -380,7 +445,8 @@
 
     <!-- Contact -->
     <section id="contact" class="block contact">
-      <h3 class="label"><span>09</span> say hello</h3>
+      <h3 class="label"><span>10</span> say hello</h3>
+      <img class="contact-photo" src="assets/photos/portrait-concrete.jpg" alt="Amimul in a blazer, arms crossed, in front of a concrete wall" loading="lazy" width="1000" height="661">
       <p class="big">The best way to reach me is <a href="mailto:azoha@gmu.edu">azoha@gmu.edu</a>.</p>
       <p class="prose-sm">I'm happy to talk about clinical NLP, LLM evaluation, teaching intro CS, or the PhD application process.
         If you're an undergrad wondering whether research is for you, please do write.</p>
@@ -391,6 +457,12 @@
     </footer>
   </main>
 </div>
+
+<dialog class="lightbox" aria-label="Photo viewer">
+  <form method="dialog"><button class="lb-close" aria-label="Close photo">close &times;</button></form>
+  <img alt="">
+  <p class="lb-cap"></p>
+</dialog>
 
 <script src="assets/main.js"></script>
 </body>
