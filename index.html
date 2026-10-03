@@ -32,7 +32,11 @@
         <span class="mark" aria-hidden="true"><span>a</span><span>z</span></span>
       </a>
       <h1 class="name">Amimul Ehsan Zoha</h1>
-      <p class="role">PhD student, Information Technology<br>George Mason University</p>
+      <ul class="degrees">
+        <li><b>PhD</b><span>Information Technology<br>George Mason University</span></li>
+        <li><b>MS</b><span>Computer Science<br>University of Arizona</span></li>
+        <li><b>BS</b><span>Computer Science<br>University of Arizona</span></li>
+      </ul>
       <p class="advisor"><span>advisor</span><a href="https://mzampieri.com/" target="_blank" rel="noopener">Dr. Marcos Zampieri</a></p>
       <p class="place"><span class="dot" aria-hidden="true"></span>Fairfax, Virginia</p>
 
@@ -69,8 +73,8 @@
     <!-- Hero -->
     <section class="hero">
       <p class="kicker">hi, I'm Zoha</p>
-      <h2 class="hero-line">I build language tools that read the messy stuff:
-        <em>clinical notes</em>, <em>student code</em>, and the places where a model says it understood but didn't.</h2>
+      <h2 class="hero-line">I work on applied AI and NLP, and I point it at two domains on purpose:
+        <em>education</em> and <em>healthcare</em>.</h2>
 
       <figure class="note" aria-label="An example clinical sentence with symptoms and negations highlighted">
         <figcaption class="note-head">
@@ -83,10 +87,7 @@
           <span class="ann neg" data-label="negated">denies fever</span>,
           <span class="ann neg" data-label="negated">no night sweats</span>.
         </p>
-        <p class="note-foot">
-          This is roughly what my research looks like up close. Spotting the symptom is the easy half.
-          Noticing the <q>no</q> in front of it is where models trip.
-        </p>
+        <p class="note-foot">Spotting the symptom is the easy part. Catching the <q>no</q> in front of it is where models trip.</p>
       </figure>
     </section>
 
@@ -95,28 +96,16 @@
       <h3 class="label"><span>01</span> about</h3>
       <div class="prose">
         <p>
-          I'm a first-year PhD student in Information Technology at
-          <strong>George Mason University</strong>, advised by
-          <strong><a href="https://mzampieri.com/" target="_blank" rel="noopener">Dr. Marcos Zampieri</a></strong>. I work on applied AI and NLP, and I point it at two domains on purpose:
-          <strong>education</strong> and <strong>healthcare</strong>. To me they are the two most impactful
-          domains there are. Almost everyone passes through a classroom and a clinic, so a tool that works well
-          in either one can play a positive role in a lot of people's lives. That is where I want my applied
-          AI and NLP expertise to go.
+          I'm a first-year PhD student at <strong>George Mason University</strong>, advised by
+          <strong><a href="https://mzampieri.com/" target="_blank" rel="noopener">Dr. Marcos Zampieri</a></strong>. To me, education and healthcare are the two most impactful
+          domains there are. Almost everyone passes through a classroom and a clinic, so good tools there
+          can make a real difference in a lot of lives.
         </p>
         <p>
-          Before Mason I spent five years at the <strong>University of Arizona</strong>, where I finished
-          a BS and an MS in Computer Science (GPA 3.90). In my last year and a half there I worked in
-          the Deep Target NLP Lab with <strong>Dr. Gondy Leroy</strong>, building a pipeline that pulls
-          Valley Fever symptoms out of patient records without ever sending those records to an outside API.
-          That work became my first paper as first author, which I presented at
-          <a href="https://www.computer.org/csdl/proceedings-article/ichi/2026/642600a001/2iTi1JK2KfS" target="_blank" rel="noopener">IEEE ICHI 2026</a> in Minneapolis.
-        </p>
-        <p>
-          The other half of my time in Tucson was spent teaching. Six semesters as a TA for intro
-          Python and Java, a summer bootcamp on LLMs for people who had never written code, and a student AI
-          club I co-founded that grew past a hundred members. A lot of my
-          research questions come from watching people learn. These experiences naturally shaped my goal of
-          pursuing a PhD and, one day, becoming a faculty member myself.
+          Before Mason, I earned a BS and an MS in Computer Science at the <strong>University of Arizona</strong>.
+          There I built privacy-preserving clinical NLP for Valley Fever with <strong>Dr. Gondy Leroy</strong>,
+          which became my first paper (<a href="https://www.computer.org/csdl/proceedings-article/ichi/2026/642600a001/2iTi1JK2KfS" target="_blank" rel="noopener">IEEE ICHI 2026</a>),
+          and spent six semesters as a CS TA. Next goal: finish the PhD and become a faculty member.
         </p>
 
         <blockquote class="pull">
@@ -125,23 +114,21 @@
           <cite>from my PhD goals statement</cite>
         </blockquote>
 
-        <p class="pull-lead">The kind of system I have in mind:</p>
         <ul class="tenets">
-          <li><b>genuinely helpful</b><span>Built around a real person's problem: a clinician reading notes, a student stuck on a bug.</span></li>
-          <li><b>cheap to run</b><span>Efficient in cost and compute, so a hospital or a university can actually afford to deploy it.</span></li>
-          <li><b>fits in</b><span>Embedded so the human interaction feels seamless, not bolted on.</span></li>
-          <li><b>keeps secrets</b><span>Sensitive data stays protected. Patient notes never leave the building.</span></li>
+          <li><b>genuinely helpful</b><span>Solves a real person's problem.</span></li>
+          <li><b>cheap to run</b><span>Efficient in cost and compute.</span></li>
+          <li><b>fits in</b><span>Seamless for the people using it.</span></li>
+          <li><b>keeps secrets</b><span>Sensitive data stays protected.</span></li>
         </ul>
         <figure class="wide-photo">
           <img src="assets/photos/grad-catalinas.jpg" alt="Amimul in a graduation stole, sitting on a rock in the mountains above Tucson at sunset" loading="lazy" width="1400" height="788">
-          <figcaption>Grad photos in the mountains above Tucson, spring 2026. Five years of desert, wrapped up.</figcaption>
+          <figcaption>Grad photos above Tucson, spring 2026.</figcaption>
         </figure>
       </div>
 
       <aside class="now">
         <p class="now-tag">now</p>
-        <p>First semester at Mason. Evaluating how well open-weight LLMs handle intro programming
-          coursework, queuing jobs on the Hopper cluster, and getting used to weather that isn't 105&deg;F.</p>
+        <p>First semester at Mason. Testing open-weight LLMs on intro programming tasks.</p>
       </aside>
     </section>
 
@@ -149,63 +136,52 @@
     <section id="news" class="block">
       <h3 class="label"><span>02</span> news</h3>
       <ol class="news">
-        <li><time>Fall 2026</time><p>Started my PhD at <strong>George Mason University</strong> with Dr. Marcos Zampieri. Moved from the Sonoran Desert to Northern Virginia.</p></li>
-        <li><time>Jun 2, 2026</time><p>Presented <a href="https://www.computer.org/csdl/proceedings-article/ichi/2026/642600a001/2iTi1JK2KfS" target="_blank" rel="noopener"><em>Fine-Tuning BERT with Privacy-Preserving LLM-Labeled Synthetic Training Data</em></a> at <strong>IEEE ICHI 2026</strong> in Minneapolis. My first paper as first author.</p></li>
-        <li><time>May 2026</time><p>Graduated from the University of Arizona with a BS and MS in Computer Science.</p></li>
-        <li><time>May 5, 2026</time><p>Spoke in the awardee presentations at the <strong>11th ABRC-Flinn Research Conference</strong> in Phoenix, on synthetic data for Valley Fever symptom and SDoH extraction. (<a href="assets/abrc-flinn-2026-agenda.pdf" target="_blank" rel="noopener">agenda</a>)</p></li>
-        <li><time>Feb 25, 2026</time><p>Poster at the <strong>AI Health Innovation Symposium</strong>, University of Arizona.</p></li>
-        <li><time>Jan 2025</time><p>Joined the <strong>Deep Target NLP Lab</strong> as a graduate research assistant. Also started a side project on LLM logical reasoning with Dr. Liangming Pan.</p></li>
-        <li><time>2024</time><p>Led hands-on workshops on Custom GPTs and agentic architectures at the <strong>Horizon Conference</strong> at Arizona Western College in Yuma, with nearly 200 students, educators, and business leaders attending.</p></li>
-        <li><time>Aug 2024</time><p>Co-founded the <strong>UA AI Club</strong>. It grew to 100+ members, running hands-on workshops on fine-tuning, RAG, and running models locally.</p></li>
-        <li><time>Summer 2024</time><p>Designed and taught a 4-week LLM bootcamp for 40+ interns at <strong>AI Core</strong>, including a Custom GPTs training I co-led with David Herring. Briefed the whole cohort before the August showcase.</p></li>
-        <li><time>Summer 2023</time><p>Shipped a CO&#8322; emissions banner to the Android app at <strong>American Express GBT</strong> in Chicago.</p></li>
+        <li><time>Fall 2026</time><p>Started my PhD at <strong>GMU</strong> with Dr. Marcos Zampieri.</p></li>
+        <li><time>Jun 2026</time><p>Presented my first paper at <strong>IEEE ICHI 2026</strong>, Minneapolis.</p></li>
+        <li><time>May 2026</time><p>Graduated from Arizona with a BS and MS in CS.</p></li>
+        <li><time>May 2026</time><p>Talk at the <strong>11th ABRC-Flinn Research Conference</strong>, Phoenix. (<a href="assets/abrc-flinn-2026-agenda.pdf" target="_blank" rel="noopener">agenda</a>)</p></li>
+        <li><time>Feb 2026</time><p>Poster at the <strong>AI Health Innovation Symposium</strong>, UArizona.</p></li>
+        <li><time>Jan 2025</time><p>Joined the <strong>Deep Target NLP Lab</strong> as a graduate research assistant.</p></li>
+        <li><time>2024</time><p>Led Custom GPT and agentic AI workshops at the <strong>Horizon Conference</strong>, Yuma.</p></li>
+        <li><time>Aug 2024</time><p>Co-founded the <strong>UA AI Club</strong>. It grew to 100+ members.</p></li>
+        <li><time>Summer 2024</time><p>Taught a 4-week LLM bootcamp to 40+ interns at <strong>AI Core</strong>.</p></li>
+        <li><time>Summer 2023</time><p>Android intern at <strong>American Express GBT</strong>, Chicago.</p></li>
       </ol>
     </section>
 
     <!-- Research -->
     <section id="research" class="block">
       <h3 class="label"><span>03</span> research</h3>
-      <p class="lede">Three threads, one habit: build the test set first, then find out what the model really does.</p>
+      <p class="lede">Build the test set first, then find out what the model really does.</p>
 
       <div class="threads">
         <article class="thread">
           <p class="thread-n">i.</p>
           <h4>Clinical NLP that stays inside the hospital</h4>
-          <p>Valley Fever is common in Arizona and easy to miss, because its symptoms look like a cold or
-            pneumonia. I built a pipeline that finds its symptoms and social determinants of health in EHR
-            text. Instead of sending patient notes to a commercial LLM, we used an LLM to label
-            <em>synthetic</em> sentences, then fine-tuned a small BERT model on those labels. I also put together a
-            1,200-sentence challenge set full of implicit symptoms, heavy jargon, and stacked negations,
-            and compared clinical encoders (BioClinical ModernBERT) against small quantized local LLMs
-            (MedGemma, Llama) that a hospital could realistically run.</p>
+          <p>Valley Fever is common in Arizona and easy to miss. I extract its symptoms and social determinants
+            of health from EHR notes without sending patient data out: an LLM labels <em>synthetic</em> sentences,
+            and a small BERT model learns from them. I also built a 1,200-sentence challenge set and compared
+            clinical encoders with small local LLMs.</p>
           <p class="thread-meta">with Dr. Gondy Leroy &middot; University of Arizona</p>
         </article>
 
         <article class="thread">
           <p class="thread-n">ii.</p>
-          <h4>Does the model reason, or does it pattern-match?</h4>
-          <p>Using the FLDx2 formal logic corpus, I designed controlled experiments around three questions.
-            If a model can do a 3-step proof, can it do a 6-step one? Does it still work when you add facts that
-            don't matter? And what happens when you slip a negation in? What we found: the models got more distracted
-            as we added irrelevant premises to the context, and they struggled with proofs involving negations.
-            (Negation, again. See thread i.)</p>
+          <h4>Does the model reason, or pattern-match?</h4>
+          <p>Controlled experiments on the FLDx2 logic corpus. Models got more distracted as irrelevant premises
+            piled up, and struggled with proofs involving negations.</p>
           <p class="thread-meta">with Dr. Liangming Pan &middot; University of Arizona</p>
         </article>
 
         <article class="thread">
           <p class="thread-n">iii.</p>
           <h4>LLMs and the intro CS classroom</h4>
-          <p>Students in CS1 are already using LLMs, so the question is less <q>should they</q> and more
-            <q>how good are these models at the actual coursework?</q> My first PhD project builds on
-            <em>CSEPrompts</em> (Raihan et al., <em>Journal of Intelligent Information Systems</em>), a benchmark of
-            intro CS prompts. I'm making it executable, so models get graded the way a student would, by running
-            their code against tests, and stretching it across more human languages and more programming languages.
-            A student in Dhaka or S&atilde;o Paulo asks the same questions as one in Fairfax, just not in English.
-            As a Bangla speaker, that part is personal.</p>
-          <p>It also comes from the TA desk. As a CS TA before and after ChatGPT, I have seen how students rely on
-            AI-generated code, and I keep thinking about how to design tools that leverage the benefits of GenAI
-            without harming real learning.</p>
-          <p class="thread-meta">ongoing &middot; with Dr. Marcos Zampieri and Nishat Raihan &middot; George Mason University</p>
+          <p>My first PhD project builds on <em>CSEPrompts</em> (Raihan et al., <em>J. Intell. Inf. Syst.</em>).
+            I'm making it executable, so models get graded like students, by running their code against tests,
+            and extending it to more human and programming languages. As a Bangla speaker, that part is personal.</p>
+          <p>As a TA before and after ChatGPT, I saw how students lean on AI-generated code. I want tools that
+            help without harming real learning.</p>
+          <p class="thread-meta">ongoing &middot; with Dr. Marcos Zampieri and Nishat Raihan &middot; GMU</p>
         </article>
       </div>
     </section>
@@ -220,9 +196,9 @@
         <div>
           <h4><a href="https://www.computer.org/csdl/proceedings-article/ichi/2026/642600a001/2iTi1JK2KfS" target="_blank" rel="noopener">Fine-Tuning BERT with Privacy-Preserving LLM-Labeled Synthetic Training Data: An Application to Valley Fever Symptom Extraction</a></h4>
           <p class="paper-authors"><strong>Amimul Ehsan Zoha</strong>, Gondy Leroy, John N. Galgiani, Fariba Donovan</p>
-          <p class="paper-sub">IEEE International Conference on Healthcare Informatics (ICHI), Minneapolis, MN, June 2026. pp. 1&#8209;10. Analytics Track, Scientific Session 1.</p>
-          <p class="paper-tldr"><b>tl;dr</b> Generate training data from the annotation guidelines instead of from patient notes.
-            The small model trained on it lands within 2% of an 8B LLM, runs about 350&times; faster, and never touches PHI.</p>
+          <p class="paper-sub">IEEE International Conference on Healthcare Informatics (ICHI), Minneapolis, MN, June 2026. pp. 1&#8209;10.</p>
+          <p class="paper-tldr"><b>tl;dr</b> Train on data generated from annotation guidelines, not patient notes.
+            Within 2% of an 8B LLM, about 350&times; faster, no PHI.</p>
           <p class="paper-links">
             <a href="https://www.computer.org/csdl/proceedings-article/ichi/2026/642600a001/2iTi1JK2KfS" target="_blank" rel="noopener">paper</a>
             <a href="https://doi.org/10.1109/ICHI69079.2026.00012" target="_blank" rel="noopener">doi</a>
@@ -231,7 +207,7 @@
       </article>
       <figure class="inline-photo">
         <img src="assets/photos/ichi-2026.jpg" alt="Amimul and Dr. Gondy Leroy standing in front of the title slide at IEEE ICHI 2026" loading="lazy" width="1200" height="900">
-        <figcaption>Right after the talk in Minneapolis, with Dr. Gondy Leroy. June 2, 2026.</figcaption>
+        <figcaption>With Dr. Gondy Leroy after the talk. June 2, 2026.</figcaption>
       </figure>
 
       <h4 class="mini">talks &amp; posters</h4>
@@ -239,7 +215,7 @@
         <div class="paper-venue talk"><span>ABRC-Flinn</span><span>2026</span></div>
         <div>
           <h4>Overcoming Annotation and Privacy Bottlenecks: Synthetic Data Augmentation for Valley Fever Symptom and SDoH Extraction</h4>
-          <p class="paper-sub">Speaker, Awardee Presentations. 11th ABRC-Flinn Research Conference, University of Arizona College of Medicine, Phoenix. May 5, 2026.</p>
+          <p class="paper-sub">Speaker, 11th ABRC-Flinn Research Conference, UA College of Medicine, Phoenix. May 5, 2026.</p>
           <p class="paper-authors">Abstract: <em>Improving the Prediction and Recognition of Arizona Valley Fever.</em>
             <strong>A. Zoha</strong>, M. Potla, G. Leroy, F. Donovan, S.S. Kandala, F. Wei, X. Jin, T. Bils, J.N. Galgiani.</p>
           <p class="paper-links"><a href="assets/abrc-flinn-2026-agenda.pdf" target="_blank" rel="noopener">agenda</a></p>
@@ -257,21 +233,19 @@
         <div class="paper-venue talk"><span>workshop</span><span>2024</span></div>
         <div>
           <h4>Custom GPTs and Agentic Architectures</h4>
-          <p class="paper-sub">Hands-on workshops with the AI Core team. Horizon Conference, Arizona Western College, Yuma, AZ.</p>
+          <p class="paper-sub">Workshops, Horizon Conference, Arizona Western College, Yuma.</p>
         </div>
       </article>
-      <p class="aside-note">More on the way. Ask me about the benchmark work if you're curious.</p>
     </section>
 
     <!-- Service -->
     <section id="talks" class="block">
       <h3 class="label"><span>05</span> service &amp; community</h3>
       <ul class="plain service">
-        <li><b>UA AI Club</b>, co-founder and vice president. Faculty talks and hands-on workshops (prompting, LoRA, RAG, local inference with Ollama) for 100+ members.</li>
-        <li><b>UArizona Hackathon</b>. Represented the club and ran hands-on technical workshops.</li>
-        <li><b>AI Core</b>. Wrote and taught a 4-week LLM bootcamp for 40+ interns; co-led the Custom GPTs training.</li>
-        <li><b>Horizon Conference 2024</b>, Yuma. Workshop leader for Custom GPTs and agentic architectures.</li>
-        <li><b>CS TA hiring panel</b>, University of Arizona. Interviewed 50+ TA candidates.</li>
+        <li><b>UA AI Club</b>, co-founder and VP. Talks and hands-on workshops for 100+ members.</li>
+        <li><b>UArizona Hackathon</b>. Workshop lead for the club.</li>
+        <li><b>Horizon Conference 2024</b>, Yuma. Workshop lead.</li>
+        <li><b>CS TA hiring panel</b>, UArizona. Interviewed 50+ candidates.</li>
       </ul>
     </section>
 
@@ -285,7 +259,7 @@
           <div class="what">
             <h4>PhD Student, Information Technology</h4>
             <p class="where">George Mason University &middot; Fairfax, VA</p>
-            <p>Advised by <a href="https://mzampieri.com/" target="_blank" rel="noopener">Dr. Marcos Zampieri</a>. Applied NLP for linguistics, healthcare, and education.</p>
+            <p>Advised by <a href="https://mzampieri.com/" target="_blank" rel="noopener">Dr. Marcos Zampieri</a>.</p>
           </div>
         </li>
         <li class="stop">
@@ -293,8 +267,7 @@
           <div class="what">
             <h4>Graduate Research Assistant, Deep Target NLP Lab</h4>
             <p class="where">University of Arizona, MIS Department &middot; Tucson, AZ</p>
-            <p>Privacy-preserving clinical NLP for Valley Fever. Built the challenge set, coordinated expert medical
-              annotation, and ran the encoder vs. local LLM comparison. Led to the ICHI 2026 paper.</p>
+            <p>Privacy-preserving clinical NLP for Valley Fever. Led to the ICHI 2026 paper.</p>
           </div>
         </li>
         <li class="stop">
@@ -302,8 +275,7 @@
           <div class="what">
             <h4>Co-Founder &amp; Vice President, UA AI Club</h4>
             <p class="where">University of Arizona</p>
-            <p>Grew it from zero to 100+ members. Brought in faculty speakers, ran workshops on LoRA, RAG, and local inference,
-              and represented the club at the UArizona Hackathon.</p>
+            <p>Zero to 100+ members. Faculty talks and hands-on workshops.</p>
           </div>
         </li>
         <li class="stop">
@@ -311,9 +283,7 @@
           <div class="what">
             <h4>Student AI Engineer &amp; Teaching Specialist</h4>
             <p class="where">AI Core, ICDI &middot; Tucson, AZ</p>
-            <p>Built RAG and agent-based chatbots for clients with LangChain, kept an eye on API costs, and managed interns.
-              Also wrote and taught a 4-week CustomGPTs and Web API bootcamp from scratch, and took the
-              workshops on the road to the Horizon Conference in Yuma.</p>
+            <p>Built RAG and agent chatbots for clients. Wrote and taught a 4-week LLM bootcamp.</p>
           </div>
         </li>
         <li class="stop">
@@ -321,8 +291,7 @@
           <div class="what">
             <h4>Software Development Intern</h4>
             <p class="where">American Express Global Business Travel (Egencia) &middot; Chicago, IL</p>
-            <p>Added a sustainability banner with per-trip CO&#8322; data to Android rail search, wired up the backend endpoint that
-              serves it to both Android and iOS, and built a reusable Jetpack Compose callout card for the design system.</p>
+            <p>Shipped a CO&#8322; emissions banner in the Android app, plus the API behind it.</p>
           </div>
         </li>
         <li class="stop">
@@ -330,15 +299,15 @@
           <div class="what">
             <h4>Teaching Assistant, six semesters</h4>
             <p class="where">University of Arizona, Computer Science</p>
-            <p>CSC 110, 120, and 210. More below.</p>
+            <p>CSC 110, 120, and 210.</p>
           </div>
         </li>
         <li class="stop start-stop">
-          <div class="when">2021</div>
+          <div class="when">2021 to 2026</div>
           <div class="what">
-            <h4>Started a CS degree in Tucson</h4>
+            <h4>BS + MS, Computer Science</h4>
             <p class="where">University of Arizona</p>
-            <p>BS + MS in Computer Science, finished May 2026 with a 3.90.</p>
+            <p>Finished May 2026, GPA 3.90.</p>
           </div>
         </li>
       </ol>
@@ -347,10 +316,7 @@
     <!-- Teaching -->
     <section id="teaching" class="block">
       <h3 class="label"><span>07</span> teaching &amp; mentoring</h3>
-      <div class="prose">
-        <p>Office hours taught me a lot about how people actually learn to code: usually by staring at an
-          off-by-one error until it finally clicks. I try to give hints, not answers.</p>
-      </div>
+      <p class="lede">Hints, not answers.</p>
 
       <div class="tally">
         <div><b>6</b><span>semesters as a TA</span></div>
@@ -363,97 +329,95 @@
         <li><span class="code">CSC 110</span> Introduction to Computer Programming (Python)</li>
         <li><span class="code">CSC 120</span> Computer Programming I (Python)</li>
         <li><span class="code">CSC 210</span> Software Development (Java)</li>
-        <li><span class="code">bootcamp</span> CustomGPTs &amp; Web APIs, a 4-week course for non-CS interns at AI Core</li>
-        <li><span class="code">workshops</span> LoRA fine-tuning, RAG pipelines, local LLM inference, UA AI Club</li>
+        <li><span class="code">bootcamp</span> CustomGPTs &amp; Web APIs for non-CS interns, AI Core</li>
+        <li><span class="code">workshops</span> LoRA, RAG, local LLMs, UA AI Club</li>
       </ul>
-      <p class="aside-note">As a TA I led sections of 20+ students, wrote test cases and graded code, sat on the hiring
-        panel for new CS TAs, and did a lot of informal career advice about internships and research.</p>
     </section>
 
     <!-- Snapshots -->
     <section id="snapshots" class="block">
       <h3 class="label"><span>08</span> snapshots</h3>
-      <p class="lede">Proof that I occasionally leave the terminal. Tap a photo to see it bigger.</p>
+      <p class="lede">Away from the terminal. Tap to enlarge.</p>
       <div class="wall">
         <figure class="snap tilt-l"><button type="button" aria-label="View larger: Amimul and Dr. Gondy Leroy at IEEE ICHI 2026"><img src="assets/photos/ichi-2026.jpg" alt="Amimul and Dr. Gondy Leroy at IEEE ICHI 2026" loading="lazy" width="1200" height="900"></button>
-          <figcaption><time>Jun 2026</time> IEEE ICHI, Minneapolis. First paper, first conference talk.</figcaption></figure>
+          <figcaption><time>Jun 2026</time> IEEE ICHI, Minneapolis.</figcaption></figure>
         <figure class="snap tilt-r"><button type="button" aria-label="View larger: Amimul teaching in front of a large screen at AI Core"><img src="assets/photos/aicore-customgpt-training.jpg" alt="Amimul teaching in front of a large screen at AI Core" loading="lazy" width="727" height="1200"></button>
-          <figcaption><time>Summer 2024</time> Teaching the Custom GPTs training at AI Core.</figcaption></figure>
+          <figcaption><time>Summer 2024</time> Custom GPTs training, AI Core.</figcaption></figure>
         <figure class="snap "><button type="button" aria-label="View larger: Group photo of AI Core staff and summer interns"><img src="assets/photos/aicore-allhands-group.jpg" alt="Group photo of AI Core staff and summer interns" loading="lazy" width="1200" height="835"></button>
-          <figcaption><time>Aug 2024</time> AI Core's last all-hands of the summer, a few days before the showcase.</figcaption></figure>
+          <figcaption><time>Aug 2024</time> AI Core summer all-hands.</figcaption></figure>
         <figure class="snap tilt-l"><button type="button" aria-label="View larger: Amimul at a podium briefing interns about the showcase event"><img src="assets/photos/aicore-allhands-talk.jpg" alt="Amimul at a podium briefing interns about the showcase event" loading="lazy" width="1200" height="830"></button>
-          <figcaption><time>Aug 2024</time> Briefing the intern cohort on showcase day logistics.</figcaption></figure>
+          <figcaption><time>Aug 2024</time> Briefing interns before the showcase.</figcaption></figure>
         <figure class="snap tilt-r"><button type="button" aria-label="View larger: Amimul helping a student at a laptop"><img src="assets/photos/aicore-helping-intern.jpg" alt="Amimul helping a student at a laptop" loading="lazy" width="1200" height="908"></button>
-          <figcaption><time>2024</time> The part of teaching I like most: debugging over someone's shoulder.</figcaption></figure>
+          <figcaption><time>2024</time> Debugging over someone's shoulder.</figcaption></figure>
         <figure class="snap "><button type="button" aria-label="View larger: Welcome to the UA AI Club slide on a TV"><img src="assets/photos/aiclub-welcome.jpg" alt="Welcome to the UA AI Club slide on a TV" loading="lazy" width="1200" height="900"></button>
-          <figcaption><time>Mar 2025</time> UA AI Club, another Saturday session.</figcaption></figure>
+          <figcaption><time>Mar 2025</time> UA AI Club session.</figcaption></figure>
         <figure class="snap tilt-l"><button type="button" aria-label="View larger: Amimul presenting a prompt engineering slide that reads give the model time to think"><img src="assets/photos/aiclub-prompting-workshop.jpg" alt="Amimul presenting a prompt engineering slide that reads give the model time to think" loading="lazy" width="1200" height="900"></button>
-          <figcaption><time>2025</time> Prompting workshop. Principle: give the model time to think. Same goes for students.</figcaption></figure>
+          <figcaption><time>2025</time> Prompting workshop.</figcaption></figure>
         <figure class="snap tilt-r"><button type="button" aria-label="View larger: Amimul helping students during an Introduction to Ollama workshop"><img src="assets/photos/ollama-workshop.jpg" alt="Amimul helping students during an Introduction to Ollama workshop" loading="lazy" width="900" height="1200"></button>
-          <figcaption><time>2025</time> Running LLMs on your own laptop with Ollama.</figcaption></figure>
+          <figcaption><time>2025</time> Local LLMs with Ollama.</figcaption></figure>
         <figure class="snap "><button type="button" aria-label="View larger: Amimul walking between tables during a workshop"><img src="assets/photos/workshop-floor.jpg" alt="Amimul walking between tables during a workshop" loading="lazy" width="1200" height="900"></button>
-          <figcaption><time>2025</time> Walking the room during a hands-on workshop.</figcaption></figure>
+          <figcaption><time>2025</time> Hands-on workshop.</figcaption></figure>
         <figure class="snap tilt-l"><button type="button" aria-label="View larger: A room of students posing after a workshop"><img src="assets/photos/workshop-crowd.jpg" alt="A room of students posing after a workshop" loading="lazy" width="1200" height="900"></button>
-          <figcaption><time>2025</time> The crowd after a workshop.</figcaption></figure>
+          <figcaption><time>2025</time> Workshop crowd.</figcaption></figure>
         <figure class="snap tilt-r"><button type="button" aria-label="View larger: Amimul with five others in front of an AI event backdrop with balloons"><img src="assets/photos/ai-event-group.jpg" alt="Amimul with five others in front of an AI event backdrop with balloons" loading="lazy" width="900" height="1200"></button>
-          <figcaption><time>UArizona</time> With teammates and mentors at a campus AI event.</figcaption></figure>
+          <figcaption><time>UArizona</time> Campus AI event.</figcaption></figure>
         <figure class="snap "><button type="button" aria-label="View larger: Amimul sitting at a desk in the American Express GBT office in Chicago"><img src="assets/photos/amex-gbt-desk.jpg" alt="Amimul sitting at a desk in the American Express GBT office in Chicago" loading="lazy" width="900" height="1200"></button>
-          <figcaption><time>Summer 2023</time> My desk at Amex GBT in Chicago, next to the Android mascot.</figcaption></figure>
+          <figcaption><time>Summer 2023</time> My desk at Amex GBT, Chicago.</figcaption></figure>
       </div>
     </section>
 
     <!-- Projects -->
     <section id="projects" class="block">
       <h3 class="label"><span>09</span> things I built</h3>
-      <p class="lede">Mostly coursework that got out of hand. Numbers where there are numbers.</p>
+      <p class="lede">Coursework that got out of hand.</p>
 
       <div class="projects">
         <article class="proj">
           <h4>Jeopardy QA engine</h4>
-          <p>Lucene retriever over 100K Wikipedia pages with a custom analyzer, then GPT-4o-mini reranking the top 20.</p>
+          <p>Lucene over 100K Wikipedia pages, reranked by GPT-4o-mini.</p>
           <div class="metric" style="--from:.29;--to:.53"><span class="metric-k">P@1</span><span class="bar"><i></i></span><span class="metric-v">0.29 &rarr; 0.53</span></div>
           <p class="stack">Java &middot; Lucene &middot; BM25 &middot; LLM reranking</p>
         </article>
         <article class="proj">
           <h4>Multi-label emotion classifier</h4>
-          <p>A CNN that tags text with any of 7 emotions at once. Threshold tuning, dropout, early stopping.</p>
+          <p>A CNN that tags text with any of 7 emotions.</p>
           <div class="metric" style="--from:0;--to:.83"><span class="metric-k">micro-F1</span><span class="bar"><i></i></span><span class="metric-v">0.83</span></div>
           <p class="stack">Python &middot; Keras</p>
         </article>
         <article class="proj">
           <h4>Arc-standard dependency parser</h4>
-          <p>Transition-based parser with an SVM oracle trained on ~30K configurations from the UD treebank.</p>
+          <p>Transition-based parser with an SVM oracle, UD treebank.</p>
           <div class="metric" style="--from:0;--to:.619"><span class="metric-k">UAS</span><span class="bar"><i></i></span><span class="metric-v">61.9%</span></div>
           <p class="stack">Python &middot; scikit-learn</p>
         </article>
         <article class="proj">
           <h4>Heart disease prediction</h4>
-          <p>KNN, RBF-kernel KNN, and logistic regression on the Cleveland dataset, with hand-rolled grid search and k-fold CV.</p>
+          <p>KNN, kernel KNN, and logistic regression with k-fold CV.</p>
           <p class="stack">Python &middot; scikit-learn</p>
         </article>
         <article class="proj">
           <h4>An operating system kernel</h4>
-          <p>Process control, inter-process communication, and device drivers, written from scratch in C on the USLOSS emulator.</p>
+          <p>Processes, IPC, and device drivers from scratch in C.</p>
           <p class="stack">C &middot; Docker</p>
         </article>
         <article class="proj">
           <h4>Log-structured file system</h4>
-          <p>A FUSE file system on Linux that writes everything as a log, segment cleaning included.</p>
+          <p>A FUSE file system with segment cleaning.</p>
           <p class="stack">C &middot; Linux</p>
         </article>
         <article class="proj">
           <h4>FitGuide</h4>
-          <p>Android fitness app built by a two-person Scrum team: login, workout tracking, guided routines, meal plans.</p>
+          <p>Android fitness app: workouts, guides, meal plans.</p>
           <p class="stack">Java &middot; Android &middot; Firebase</p>
         </article>
         <article class="proj">
           <h4>Socialite</h4>
-          <p>A small social network: Express server, vanilla JS client using fetch, MongoDB underneath.</p>
+          <p>A small full-stack social network.</p>
           <p class="stack">Node &middot; Express &middot; MongoDB</p>
         </article>
         <article class="proj">
           <h4>DIY Resume Master</h4>
-          <p>Tailors a LaTeX resume to a job posting using a local model through Ollama or GPT-4o, with Selenium doing the scraping.</p>
+          <p>Tailors a LaTeX resume to a job post with local or hosted LLMs.</p>
           <p class="stack">Python &middot; Ollama &middot; LaTeX</p>
         </article>
       </div>
@@ -470,13 +434,12 @@
     <section id="contact" class="block contact">
       <h3 class="label"><span>10</span> say hello</h3>
       <img class="contact-photo" src="assets/photos/portrait-concrete.jpg" alt="Amimul in a blazer, arms crossed, in front of a concrete wall" loading="lazy" width="1000" height="661">
-      <p class="big">The best way to reach me is <a href="mailto:azoha@gmu.edu">azoha@gmu.edu</a>.</p>
-      <p class="prose-sm">I'm happy to talk about clinical NLP, LLM evaluation, teaching intro CS, or the PhD application process.
-        If you're an undergrad wondering whether research is for you, please do write.</p>
+      <p class="big">Email me: <a href="mailto:azoha@gmu.edu">azoha@gmu.edu</a></p>
+      <p class="prose-sm">Happy to talk clinical NLP, LLM evaluation, or teaching intro CS.</p>
     </section>
 
     <footer class="foot">
-      <p>Last updated October 2026. Plain HTML and CSS, no frameworks.</p>
+      <p>Last updated October 2026.</p>
     </footer>
   </main>
 </div>
